@@ -1,8 +1,8 @@
 const Giftcard = () => {
   return (
-    <div className='flex h-80'>
-      <div className='flex-1 bg-pink-600 '>Title</div>
-      <div className='flex-1 bg-purple-600'>Giftcard Image</div>
+    <div className='flex h-80 justify-between mb-10'>
+      <div className=' w-1/3 bg-gray-400 '>Title</div>
+      <div className='w-1/3 bg-gray-400'>Giftcard Image</div>
     </div>
   );
 };
