@@ -2,32 +2,42 @@ import Image from 'next/image';
 const Header = () => {
   return (
     <header>
-      {/* left */}
-      <div className=' grid gap-4 grid-cols-3 grid-rows-2  h-60  '>
-        <div className=' h-20  bg-gray-400'>
+      <div className=' grid gap-4 grid-cols-3 grid-rows-2  h-40 mb-10 '>
+        <div className=' h-12 w-12 mt-8 ml-16 bg-gray-400'>
           <Image
-            className='invert cursor-pointer'
+            className='invert cursor-pointer '
             src='/logo.svg'
             alt=''
             width='32'
             height='32'
           />
         </div>
-        <div className='h-20  bg-gray-400'>
-          <ul className=' flex justify-around'>
+        <div>
+          <ul className='bg-gray-400 flex justify-around text-slate-50 text-xl font-bold mt-10'>
             <li>Places to stay</li>
             <li>Expriences</li>
             <li>Online Expriences</li>
           </ul>
         </div>
-        <div className='h-20  bg-gray-400 '>
-          <ul className=' flex justify-around'>
-            <li>Become Host</li>
-            <li>Languages</li>
-            <li>Sign in</li>
+        <div>
+          <ul className=' bg-gray-400 flex justify-around text-slate-50 mt-10 text-xl'>
+            <li>
+              <button className=' font-bold '> Become Host</button>
+            </li>
+            <li>
+              <button className=' font-bold '> Languages</button>
+            </li>
+            <li>
+              <button className=' font-bold '>Sign in</button>
+            </li>
           </ul>
         </div>
-        <div className='h-20  bg-gray-400 col-span-3'>search</div>
+        <div className=' text-slate-50 text-xl   col-span-3 flex justify-center font-bold  bg-gray-400  '>
+          <input type='text' placeholder='Where are you going?' />
+          <button className='bg-gray-900' type='submit'>
+            <i> search</i>
+          </button>
+        </div>
       </div>
     </header>
   );
