@@ -4,9 +4,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    fontFamily: {
-      nunito: ['Nunito', ' sans - serif'],
+    extend: {
+      fontFamily: {
+        nunito: ['Nunito', ' sans - serif'],
+      },
+      backgroundImage: {
+        banner: "url('/img/banner2.jpg')",
+      },
     },
-    plugins: [],
   },
+  plugins: [],
 };
