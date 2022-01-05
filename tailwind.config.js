@@ -10,6 +10,7 @@ module.exports = {
       },
       backgroundImage: {
         banner: "url('/img/banner2.jpg')",
+        giftcard: "url('/img/giftcard.jpg')",
       },
     },
   },
