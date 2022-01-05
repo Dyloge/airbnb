@@ -17,6 +17,7 @@ module.exports = {
         card4: "url('/img/card4.jpg')",
         dicover1: "url('/img/discover1.jpg')",
         discover2: "url('/img/discover2.jpg')",
+        questionbanner: "url('/img/questionbanner.jpg')",
       },
     },
   },
