@@ -11,6 +11,10 @@ module.exports = {
       backgroundImage: {
         banner: "url('/img/banner2.jpg')",
         giftcard: "url('/img/giftcard.jpg')",
+        card1: "url('/img/card1.jpg')",
+        card2: "url('/img/card2.jpg')",
+        card3: "url('/img/card3.jpg')",
+        card4: "url('/img/card4.jpg')",
       },
     },
   },

@@ -8,7 +8,7 @@ const Giftcard = () => {
           <div className='font-semibold text-7xl text-gray-800'>
             gifit cardds
           </div>
-          <button className='bg-gray-800 text-slate-50 rounded-lg px-8 py-4 text-lg font-bold mt-10'>
+          <button className='bg-gray-800 hover:bg-black text-slate-50 rounded-lg px-8 py-4 text-lg font-bold mt-10'>
             Shop now
           </button>
         </div>
