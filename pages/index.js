@@ -4,12 +4,10 @@ import Banner from '../components/Banner';
 import Expriences from '../components/Expriences';
 import Giftcard from '../components/Giftcard';
 import Header from '../components/Header';
-import InspirationCard from '../components/InspirationCard';
+
 import QuestionBanner from '../components/QuestionBanner';
-import BasicTabs from '../components/subcomponents/BasicTabs';
+import BasicTabs from '../components/BasicTabs';
 import Header2 from '../components/subcomponents/Header2';
-import Tabs from '../components/Tabs';
-import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -27,10 +25,8 @@ export default function Home() {
       <Header2 />
       <Banner />
       <Giftcard />
-      <InspirationCard />
       <Expriences />
       <QuestionBanner />
-      <Tabs />
       <BasicTabs />
     </div>
   );
