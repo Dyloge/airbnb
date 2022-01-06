@@ -1,15 +1,15 @@
-const SubFooter = () => {
+const SubFooter = ({ title, items, key }) => {
   return (
-    <div>
-      <div>Title</div>
-      <div className='grid gap-3 grid-cols-3 grid-rows-2 mb-10'>
-        <div className='h-10 bg-gray-400'>1</div>
-        <div className='h-10 bg-gray-400'>2</div>
-        <div className='h-10 bg-gray-400'>3</div>
-        <div className='h-10 bg-gray-400'>4</div>
-        <div className='h-10 bg-gray-400'>5</div>
-        <div className='h1-10 bg-gray-400'>6</div>
+    <div className='ml-10'>
+      <div className=' font-semibold text-xl my-4'>{title}</div>
+      <div className=' grid grid-rows-2 grid-cols-3  gap-5 mb-10 text-xl cursor-pointer'>
+        {items.map((item) => (
+          <div className=' w-max hover:underline' key={key}>
+            {item}
+          </div>
+        ))}
       </div>
+      <hr />
     </div>
   );
 };
