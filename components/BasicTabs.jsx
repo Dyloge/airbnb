@@ -170,130 +170,148 @@ export default function BasicTabs() {
   ];
 
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label='basic tabs example'
-          TabIndicatorProps={{ style: { background: 'black' } }}
-          textColor='black'>
-          <Tab
-            label='Destinations for art & culture'
-            style={{
-              fontSize: '1rem',
-              fontWeight: 'bold',
-              textTransform: 'capitalize',
-            }}
-            {...a11yProps(0)}
-          />
-          <Tab
-            label='Destinations for outdoor adventure'
-            style={{
-              fontSize: '1rem',
-              fontWeight: 'bold',
-              textTransform: 'capitalize',
-            }}
-            {...a11yProps(1)}
-          />
-          <Tab
-            label='Mountain cabins'
-            style={{
-              fontSize: '1rem',
-              fontWeight: 'bold',
-              textTransform: 'capitalize',
-            }}
-            {...a11yProps(2)}
-          />
-          <Tab
-            label='Beach destinations'
-            style={{
-              fontSize: '1rem',
-              fontWeight: 'bold',
-              textTransform: 'capitalize',
-            }}
-            {...a11yProps(3)}
-          />
-          <Tab
-            label='Popular destinations'
-            style={{
-              fontSize: '1rem',
-              fontWeight: 'bold',
-              textTransform: 'capitalize',
-            }}
-            {...a11yProps(4)}
-          />
-          <Tab
-            label='Unique Stays'
-            style={{
-              fontSize: '1rem',
-              fontWeight: 'bold',
-              textTransform: 'capitalize',
-            }}
-            {...a11yProps(5)}
-          />
-        </Tabs>
+    <div>
+      <div className='text-4xl font-semibold mt-20 ml-12'>
+        Inspiration for future getaways
+      </div>
+
+      <Box sx={{ width: '100%', margin: '20px' }}>
+        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label='basic tabs example'
+            TabIndicatorProps={{ style: { background: 'black' } }}
+            textColor='black'>
+            <Tab
+              label='Destinations for art & culture'
+              style={{
+                fontSize: '1.15rem',
+                fontWeight: 'semibold',
+                textTransform: 'capitalize',
+              }}
+              {...a11yProps(0)}
+            />
+            <Tab
+              label='Destinations for outdoor adventure'
+              style={{
+                fontSize: '1.15rem',
+                fontWeight: 'semibold',
+                textTransform: 'capitalize',
+              }}
+              {...a11yProps(1)}
+            />
+            <Tab
+              label='Mountain cabins'
+              style={{
+                fontSize: '1.15rem',
+                fontWeight: 'semibold',
+                textTransform: 'capitalize',
+              }}
+              {...a11yProps(2)}
+            />
+            <Tab
+              label='Beach destinations'
+              style={{
+                fontSize: '1.15rem',
+                fontWeight: 'semibold',
+                textTransform: 'capitalize',
+              }}
+              {...a11yProps(3)}
+            />
+            <Tab
+              label='Popular destinations'
+              style={{
+                fontSize: '1.15rem',
+                fontWeight: 'semibold',
+                textTransform: 'capitalize',
+              }}
+              {...a11yProps(4)}
+            />
+            <Tab
+              label='Unique Stays'
+              style={{
+                fontSize: '1.15rem',
+                fontWeight: 'semibold',
+                textTransform: 'capitalize',
+              }}
+              {...a11yProps(5)}
+            />
+          </Tabs>
+        </Box>
+        <TabPanel value={value} index={0}>
+          <div className='flex flex-wrap'>
+            {dummyData.map((item) => (
+              <div className='w-1/3 h-20 cursor-pointer' key={item.id}>
+                <div className='text-lg'>{item.city}</div>
+                <div className='text-lg text-slate-400'>
+                  {item.commonwealth}
+                </div>
+              </div>
+            ))}
+          </div>
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          <div className='flex flex-wrap'>
+            {dummyData2.map((item) => (
+              <div className='w-1/3 h-20 cursor-pointer' key={item.id}>
+                <div className='text-lg'>{item.city}</div>
+                <div className='text-lg text-slate-400'>
+                  {item.commonwealth}
+                </div>
+              </div>
+            ))}
+          </div>
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <div className='flex flex-wrap'>
+            {dummyData.map((item) => (
+              <div className='w-1/3 h-20 cursor-pointer' key={item.id}>
+                <div className='text-lg'>{item.city}</div>
+                <div className='text-lg text-slate-400'>
+                  {item.commonwealth}
+                </div>
+              </div>
+            ))}
+          </div>
+        </TabPanel>
+        <TabPanel value={value} index={3}>
+          <div className='flex flex-wrap'>
+            {dummyData2.map((item) => (
+              <div className='w-1/3 h-20 cursor-pointer' key={item.id}>
+                <div className='text-lg'>{item.city}</div>
+                <div className='text-lg text-slate-400'>
+                  {item.commonwealth}
+                </div>
+              </div>
+            ))}
+          </div>
+        </TabPanel>
+        <TabPanel value={value} index={4}>
+          <div className='flex flex-wrap'>
+            {dummyData.map((item) => (
+              <div className='w-1/3 h-20 cursor-pointer' key={item.id}>
+                <div className='text-lg'>{item.city}</div>
+                <div className='text-lg text-slate-400'>
+                  {item.commonwealth}
+                </div>
+              </div>
+            ))}
+          </div>
+        </TabPanel>
+        <TabPanel value={value} index={5}>
+          <div className='flex flex-wrap'>
+            {dummyData2.map((item) => (
+              <div className='w-1/3 h-20 cursor-pointer' key={item.id}>
+                <div className='text-lg'>{item.city}</div>
+                <div className='text-lg text-slate-400'>
+                  {item.commonwealth}
+                </div>
+              </div>
+            ))}
+          </div>
+        </TabPanel>
       </Box>
-      <TabPanel value={value} index={0}>
-        <div className='flex flex-wrap'>
-          {dummyData.map((item) => (
-            <div className='w-1/3 h-20 cursor-pointer' key={item.id}>
-              <div className='text-lg'>{item.city}</div>
-              <div className='text-lg text-slate-400'>{item.commonwealth}</div>
-            </div>
-          ))}
-        </div>
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <div className='flex flex-wrap'>
-          {dummyData2.map((item) => (
-            <div className='w-1/3 h-20 cursor-pointer' key={item.id}>
-              <div className='text-lg'>{item.city}</div>
-              <div className='text-lg text-slate-400'>{item.commonwealth}</div>
-            </div>
-          ))}
-        </div>
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        <div className='flex flex-wrap'>
-          {dummyData.map((item) => (
-            <div className='w-1/3 h-20 cursor-pointer' key={item.id}>
-              <div className='text-lg'>{item.city}</div>
-              <div className='text-lg text-slate-400'>{item.commonwealth}</div>
-            </div>
-          ))}
-        </div>
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        <div className='flex flex-wrap'>
-          {dummyData2.map((item) => (
-            <div className='w-1/3 h-20 cursor-pointer' key={item.id}>
-              <div className='text-lg'>{item.city}</div>
-              <div className='text-lg text-slate-400'>{item.commonwealth}</div>
-            </div>
-          ))}
-        </div>
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        <div className='flex flex-wrap'>
-          {dummyData.map((item) => (
-            <div className='w-1/3 h-20 cursor-pointer' key={item.id}>
-              <div className='text-lg'>{item.city}</div>
-              <div className='text-lg text-slate-400'>{item.commonwealth}</div>
-            </div>
-          ))}
-        </div>
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        <div className='flex flex-wrap'>
-          {dummyData2.map((item) => (
-            <div className='w-1/3 h-20 cursor-pointer' key={item.id}>
-              <div className='text-lg'>{item.city}</div>
-              <div className='text-lg text-slate-400'>{item.commonwealth}</div>
-            </div>
-          ))}
-        </div>
-      </TabPanel>
-    </Box>
+    </div>
   );
 }

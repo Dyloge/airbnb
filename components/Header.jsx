@@ -66,7 +66,13 @@ const Header = () => {
                   height='16'
                   alt=''
                 />
-                <Image src='/img/avatar.svg' width='32' height='32' alt='' />
+                <Image
+                  className='invert-[.45] sepia-[.18] saturate-[2.96] hue-rotate-[182deg] brightnes-[.93] contrast-[.89]'
+                  src='/img/avatar1.svg'
+                  width='32'
+                  height='32'
+                  alt=''
+                />
               </button>
             </li>
           </ul>
