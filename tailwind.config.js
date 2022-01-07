@@ -19,6 +19,9 @@ module.exports = {
         discover2: "url('/img/discover2.jpg')",
         questionbanner: "url('/img/questionbanner.jpg')",
       },
+      screens: {
+        mobile: { raw: '(max-width: 767px)' },
+      },
     },
   },
   plugins: [],

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 const Header2 = () => {
   return (
-    <div className='bg-black flex justify-center  py-10'>
+    <div className='bg-black flex justify-center  py-10 mobile:hidden'>
       <div className='flex bg-slate-50  h-20  rounded-full'>
         <div className=' bg-slate-50  rounded-full py-2 pl-10 pr-3   text-xl  flex justify-center font-bold h-20 hover:bg-slate-200'>
           <form className='flex flex-col w-64'>
