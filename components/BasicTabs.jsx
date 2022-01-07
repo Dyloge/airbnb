@@ -175,11 +175,14 @@ export default function BasicTabs() {
         Inspiration for future getaways
       </div>
 
-      <Box sx={{ width: '100%', margin: '20px' }}>
+      <Box sx={{ width: '90%', margin: '20px' }}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <Tabs
             value={value}
             onChange={handleChange}
+            variant='scrollable'
+            scrollButtons
+            allowScrollButtonsMobile
             aria-label='basic tabs example'
             TabIndicatorProps={{ style: { background: 'black' } }}
             textColor='black'>

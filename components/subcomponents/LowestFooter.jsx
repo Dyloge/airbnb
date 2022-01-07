@@ -11,7 +11,7 @@ const LowestFooter = () => {
         <div className='text-xl cursor-pointer'>
           zł <span className='underline font-semibold'>PLN</span>
         </div>
-        <div className=' w-56 flex justify-evenly sm:invisible md:visible'>
+        <div className=' w-56 flex justify-evenly  sm:invisible md:visible'>
           <Image src='/img/facebook.svg' width='18' height='18' alt='' />
           <Image src='/img/instagram.svg' width='18' height='18' alt='' />
           <Image src='/img/twitter.svg' width='18' height='18' alt='' />
