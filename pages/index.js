@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Banner from '../components/Banner';
 import Expriences from '../components/Expriences';
 import Giftcard from '../components/Giftcard';
